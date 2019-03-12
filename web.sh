@@ -18,14 +18,17 @@ fi
 # Make sure we’re using the latest Homebrew.
 brew update
 
-brew install node
+brew install yarn
 
 # Remove outdated versions from the cellar.
 brew cleanup
 
-npm install -g coffee-script
-npm install -g grunt-cli
-npm install -g jshint
-npm install -g less
-
-#gem install jekyll
+# Install global dependencies using Yarn
+yarn global add babel
+yarn global add eslint
+yarn global add ghost-cli
+yarn global add node-sass
+yarn global add prettier
+yarn global add sass-lint
+yarn global add serve
+yarn global add vue-cli
