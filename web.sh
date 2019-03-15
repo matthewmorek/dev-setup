@@ -32,3 +32,8 @@ yarn global add prettier
 yarn global add sass-lint
 yarn global add serve
 yarn global add vue-cli
+
+# Configure Git
+git config --global core.editor "nano"
+git config --global user.name "Matthew Morek"
+git config --global user.email matthew@madbit.co
