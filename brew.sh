@@ -86,22 +86,28 @@ brew install heroku/brew/heroku
 heroku update
 
 # Core casks
-brew cask install --appdir="/Applications" alfred
-brew cask install --appdir="/Applications" iterm2
-brew cask install --appdir="/Applications" archiver
-brew cask install --appdir="/Applications" transmit
+brew cask install 1password
+brew cask install alfred
+brew cask install iterm2
+brew cask install archiver
+brew cask install transmit
+brew cask install tower
+brew cask install shimo
+brew cask install kaleidoscope
+brew cask install dash
 
 # Development tool casks
-brew cask install --appdir="/Applications" sublime-text
-brew cask install --appdir="/Applications" macdown
-brew cask install --appdir="/Applications" sequel-pro
+brew cask install sublime-text
+brew cask install macdown
+brew cask install sequel-pro
 
 # Misc casks
-brew cask install --appdir="/Applications" google-chrome
-brew cask install --appdir="/Applications" firefox
-brew cask install --appdir="/Applications" slack
-brew cask install --appdir="/Applications" 1password
-brew cask install --appdir="/Applications" gifox
+brew cask install google-chrome
+brew cask install firefox
+brew cask install slack
+brew cask install gifox
+brew cask install fantastical
+brew cask install rocket
 
 # Install Docker, which requires virtualbox
 #brew install docker
