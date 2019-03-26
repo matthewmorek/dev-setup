@@ -49,6 +49,7 @@ brew install antigen
 
 # Install ZSH profile
 cp -r init/.zshrc ~/.zshrc 2> /dev/null
+cp -r init/minimal ~/.antigen/bundles/custom/ 2> /dev/null
 
 # Install `wget` with IRI support.
 brew install wget
