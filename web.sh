@@ -36,4 +36,6 @@ yarn global add vue-cli
 # Configure Git
 git config --global core.editor "nano"
 git config --global user.name "Matthew Morek"
-git config --global user.email matthew@madbit.co
+git config --global user.email "matthew@madbit.co"
+git config --global merge.tool "Kaleidoscope"
+git config --global diff.tool "Kaleidoscope"
