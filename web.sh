@@ -18,7 +18,12 @@ fi
 # Make sure we’re using the latest Homebrew.
 brew update
 
-brew install yarn
+brew install node@10
+echo 'export PATH="/usr/local/opt/node@10/bin:$PATH"' >> ~/.zshrc
+
+brew install --ignore-dependencies yarn
+
+source ~/.zshrc
 
 # Remove outdated versions from the cellar.
 brew cleanup
