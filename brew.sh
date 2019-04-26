@@ -94,9 +94,10 @@ brew install heroku/brew/heroku
 heroku update
 
 # Core casks
+brew cask install iterm2
 brew cask install 1password
 brew cask install alfred
-brew cask install iterm2
+brew cask install bartender
 brew cask install archiver
 brew cask install transmit
 brew cask install tower
@@ -109,15 +110,22 @@ brew cask install sublime-text
 brew cask install macdown
 brew cask install sequel-pro
 brew cask install colorsnapper
+brew cask install iconjar
 
 # Misc casks
-brew cask install google-chrome
+brew cask install chromium
 brew cask install firefox
+brew cask install spotify
 brew cask install slack
 brew cask install gifox
 brew cask install fantastical
 brew cask install rocket
 brew cask install discord
+brew cask install numi
+brew cask install vox
+brew cask install transmission
+brew cask install wifi-explorer
+brew cask install iina
 
 # Install Docker, which requires virtualbox
 #brew install docker
