@@ -100,6 +100,7 @@ brew cask install dash
 
 # Development tool casks
 brew cask install sublime-text
+brew cask install visual-studio-code
 brew cask install macdown
 brew cask install sequel-pro
 brew cask install colorsnapper
@@ -119,6 +120,7 @@ brew cask install vox
 brew cask install transmission
 brew cask install wifi-explorer
 brew cask install iina
+brew cask install soundsource
 
 # Install Docker, which requires virtualbox
 #brew install docker
