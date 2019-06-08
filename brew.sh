@@ -67,12 +67,6 @@ brew install nano
 echo "include \"/usr/local/share/nano/*.nanorc\"" >> ~/.nanorc
 echo "set smooth" >> ~/.nanorc
 
-# Install font tools.
-brew tap bramstein/webfonttools
-brew install sfnt2woff
-brew install sfnt2woff-zopfli
-brew install woff2
-
 # Install other useful binaries.
 brew install ack
 #brew install dark-mode
@@ -81,7 +75,6 @@ brew install git-lfs
 brew install git-flow
 brew install git-extras
 brew install imagemagick
-brew install p7zip
 brew install ssh-copy-id
 brew install tree
 brew install pkg-config libffi
