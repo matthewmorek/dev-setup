@@ -18,7 +18,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Path to ZSH
 export ZSH=$HOME/.oh-my-zsh
 
-source /usr/local/share/antigen/antigen.zsh
+source $(brew --prefix)/share/antigen/antigen.zsh
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
