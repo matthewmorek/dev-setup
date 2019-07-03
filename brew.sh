@@ -71,8 +71,6 @@ echo "set smooth" >> ~/.nanorc
 brew install ack
 #brew install dark-mode
 brew install git
-brew install git-lfs
-brew install git-flow
 brew install git-extras
 brew install imagemagick
 brew install ssh-copy-id
@@ -87,6 +85,7 @@ brew install heroku/brew/heroku
 heroku update
 
 # Core casks
+brew cask install gpg-suite
 brew cask install iterm2
 brew cask install 1password
 brew cask install alfred
