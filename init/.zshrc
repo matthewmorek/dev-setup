@@ -25,7 +25,6 @@ antigen use oh-my-zsh
 
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
 antigen bundle gitfast
-antigen bundle autoenv
 antigen bundle docker
 antigen bundle node
 antigen bundle npm
@@ -53,12 +52,24 @@ antigen theme custom/minimal
 # Tell Antigen that you're done.
 antigen apply
 
-# Aliases
-alias python3="/usr/local/bin/python3"
-alias pip="/usr/local/bin/pip3"
-alias python3="/usr/local/bin/python3"
-alias python="python3"
-alias pip3="/usr/local/bin/python3"
-alias pip="pip3"
+# Custom user settings
+export PATH=/usr/local/opt/python/libexec/bin:$PATH
 
-fpath=(/usr/local/share/zsh-completions $fpath)
+if [ "$TERM" = "xterm-256color" ] && [ -z "$INSIDE_EMACS" ]; then
+    [ -f "~/.iterm2_shell_integration.zsh" ] && source ~/.iterm2_shell_integration.zsh
+fi
+
+export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
+
+# heroku autocomplete setup
+HEROKU_AC_ZSH_SETUP_PATH=/Users/mmorek/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;export PATH="/usr/local/opt/bison/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/bison/lib"
+export PATH="/usr/local/opt/flex/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/flex/lib"
+export CPPFLAGS="-I/usr/local/opt/flex/include"
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/openssl/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl/include"
+
+export PATH="/usr/local/sbin:$PATH"
+export GPG_TTY=$(tty)
