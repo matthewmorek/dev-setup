@@ -92,11 +92,9 @@ brew cask install alfred
 brew cask install bartender
 brew cask install archiver
 brew cask install transmit
-brew cask install tower
 brew cask install shimo
-brew cask install kaleidoscope
-brew cask install dash
-brew cask install istat-menus
+brew cask install soundsource
+brew cask install rocket
 
 # Development tool casks
 brew cask install sublime-text
@@ -105,6 +103,10 @@ brew cask install macdown
 brew cask install sequel-pro
 brew cask install colorsnapper
 brew cask install iconjar
+brew cask install paw
+brew cask install kaleidoscope
+brew cask install dash
+brew cask install tower
 
 # Misc casks
 brew cask install chromium
@@ -113,18 +115,17 @@ brew cask install spotify
 brew cask install slack
 brew cask install gifox
 brew cask install fantastical
-brew cask install rocket
 brew cask install discord
 brew cask install numi
 brew cask install vox
 brew cask install transmission
 brew cask install wifi-explorer
 brew cask install iina
-brew cask install soundsource
 brew cask install daisydisk
 brew cask install pdf-expert
 brew cask install hazel
 brew cask install pocket-casts
+brew cask install istat-menus
 
 
 # Install Docker, which requires virtualbox
