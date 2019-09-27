@@ -69,9 +69,9 @@ echo "set smooth" >> ~/.nanorc
 
 # Install other useful binaries.
 brew install ack
-#brew install dark-mode
 brew install git
 brew install git-extras
+brew install screenfetch
 brew install imagemagick
 brew install ssh-copy-id
 brew install tree
@@ -96,6 +96,7 @@ brew cask install tower
 brew cask install shimo
 brew cask install kaleidoscope
 brew cask install dash
+brew cask install istat-menus
 
 # Development tool casks
 brew cask install sublime-text
@@ -120,6 +121,11 @@ brew cask install transmission
 brew cask install wifi-explorer
 brew cask install iina
 brew cask install soundsource
+brew cask install daisydisk
+brew cask install pdf-expert
+brew cask install hazel
+brew cask install pocket-casts
+
 
 # Install Docker, which requires virtualbox
 #brew install docker
