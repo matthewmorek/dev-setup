@@ -25,20 +25,16 @@ antigen use oh-my-zsh
 
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
 antigen bundle gitfast
-antigen bundle docker
 antigen bundle node
 antigen bundle npm
-antigen bundle yarn
 antigen bundle brew
 antigen bundle github
 antigen bundle history
 antigen bundle osx
-antigen bundle pip
 antigen bundle copydir
 antigen bundle copyfile
 antigen bundle cp
 antigen bundle per-directory-history
-antigen bundle heroku
 antigen bundle command-not-found
 
 # Syntax highlighting bundle.
@@ -61,8 +57,6 @@ fi
 
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
 
-# heroku autocomplete setup
-HEROKU_AC_ZSH_SETUP_PATH=/Users/mmorek/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;export PATH="/usr/local/opt/bison/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/bison/lib"
 export PATH="/usr/local/opt/flex/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/flex/lib"
@@ -73,3 +67,5 @@ export CPPFLAGS="-I/usr/local/opt/openssl/include"
 
 export PATH="/usr/local/sbin:$PATH"
 export GPG_TTY=$(tty)
+
+alias bt-reset="blueutil --power 0; sleep 1; blueutil --power 1"

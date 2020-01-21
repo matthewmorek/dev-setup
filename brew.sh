@@ -33,7 +33,7 @@ brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
 brew install gnu-sed
 # Install ZSH
-brew install zsh zsh-completions
+brew install zsh
 # We installed the new shell, now we have to activate it
 echo "Adding the newly installed shell to the list of allowed shells"
 # Prompts for password
@@ -72,17 +72,12 @@ brew install ack
 brew install git
 brew install git-extras
 brew install screenfetch
-brew install imagemagick
 brew install ssh-copy-id
 brew install tree
-brew install pkg-config libffi
+brew install blueutil
 
 # Install useful ZSH extensions
 brew install zsh-autosuggestions zsh-completions zsh-syntax-highlighting
-
-# Install Heroku
-brew install heroku/brew/heroku
-heroku update
 
 # Core casks
 brew cask install gpg-suite

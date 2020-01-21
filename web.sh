@@ -29,14 +29,12 @@ source ~/.zshrc
 brew cleanup
 
 # Install global dependencies using Yarn
-yarn global add babel
-yarn global add eslint
-yarn global add ghost-cli
-yarn global add node-sass
-yarn global add prettier
-yarn global add sass-lint
-yarn global add serve
-yarn global add vue-cli
+npm install -g babel
+npm install -g eslint
+npm install -g ghost-cli
+npm install -g prettier
+npm install -g serve
+npm install -g vue-cli
 
 # Configure Git
 git config --global core.editor "nano"
