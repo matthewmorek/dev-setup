@@ -104,7 +104,6 @@ brew cask install dash
 brew cask install tower
 
 # Misc casks
-brew cask install chromium
 brew cask install firefox
 brew cask install spotify
 brew cask install slack
@@ -112,7 +111,6 @@ brew cask install gifox
 brew cask install fantastical
 brew cask install discord
 brew cask install numi
-brew cask install vox
 brew cask install transmission
 brew cask install wifi-explorer
 brew cask install iina
